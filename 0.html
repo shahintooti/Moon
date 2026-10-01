@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="0.jpg">
+    <link rel="stylesheet" href="0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon</title>
+</head>
+<body>
+    <div class="title1">
+        SHAHI MOON
+    </div>
+    <div class="main">
+    <div class="main2">
+    <div id="circle" class="circle">
+    <div class="circle2">
+        <span id="text1" class="text1">
+            SHAHI
+        </span>
+    </div>
+    <div class="dayere">
+    <div class="gerd">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        const text=document.getElementById('text1');
+        const circle=document.getElementById('circle');
+        dam();
+        function dam(){
+            text1.innerText='dam';
+            circle.className='circle dam';
+            setTimeout(()=>{
+                hold()
+            },2000);
+        }
+        function hold(){
+            text1.innerText='baz';
+            circle.className='circle hold';
+            setTimeout(()=>{
+                hold()
+            },1000);
+        }
+        function baz(){
+            circle.className='circle baz';
+            setTimeout(()=>{
+                hold()
+            },2000);
+        }
+    </script>
+</body>
+</html>
